@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import Header from "./Header";
 import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
+import BackgroundImage from "./BackgroundImage";
 
 import bgImage1 from "./assets/img1.jpg";
 import bgImage2 from "./assets/img2.jpg";
@@ -22,27 +24,6 @@ function Pages() {
     setBgImage(newImage);
   };
 
-  //   window.addEventListener("scroll", function () {
-  //     if (document.documentElement.scrollTop > 80) {
-  //       console.log("Window scroll is over 80");
-  //       //   setBgColor("#1e212830");
-  //     }
-  //     if (document.documentElement.scrollTop > 100) {
-  //       console.log("Window scroll is over 100");
-  //       //   setBgColor("#1e212830");
-  //     }
-  //     if (document.documentElement.scrollTop > window.innerHeight) {
-  //       console.log("Window scroll is over window.innerHeight");
-  //       //   setBgColor("#1e212830");
-  //     }
-
-  //     // } else {
-  //     //   console.log("Window scroll is below");
-  //     //   setBgColor("#1e212830");
-  //     // }
-  //   });
-
-  //   console.log("innerheight", window.innerHeight);
   window.onload = function () {
     if (
       "IntersectionObserver" in window &&
@@ -51,16 +32,13 @@ function Pages() {
     ) {
       let observerOne = new IntersectionObserver((entries) => {
         if (entries[0].boundingClientRect.y < 0) {
-          console.log("it is over");
           setBgColor("#1e212830");
         } else {
-          console.log("it is under");
           setBgColor("#1e212890");
         }
       });
       let observerTwo = new IntersectionObserver((entries) => {
         if (entries[0].boundingClientRect.y < 0) {
-          console.log("change image");
           imageChanger();
         }
       });
@@ -73,15 +51,16 @@ function Pages() {
     <>
       <Header bgColor={bgColor} />
       <SectionOne bgImage={bgImage} />
-      <div id="testtwo" className="testdiv two">
-        This is test two
-      </div>
+      <SectionTwo />
+
       <div id="testthree" className="testdiv three">
         This is test three
       </div>
       <div id="testfour" className="testdiv four">
         This is test four
       </div>
+
+      <BackgroundImage />
     </>
   );
 }
