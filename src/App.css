@@ -1,38 +1,103 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#anchorOne,
+#anchorTwo {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 80px;
+  left: 0;
+  /* z-index: 111; */
+}
+
+#anchorTwo {
+  top: 100vh;
+}
+
+#navbar {
+  height: 80px;
+  width: 100vw;
+  background-color: rgba(95, 158, 160, 0.1);
+  position: sticky;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* opacity: 0.1; */
+}
+
+.navbar__button {
+  height: 40px;
+  width: 80px;
+  background-color: aquamarine;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .topmargin {
+  height: 80px;
+} */
+
+.pagetest {
+  width: 100%;
+  padding-top: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testdiv {
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding-top: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.testdivcont {
+  height: 100vh;
+  /* height: calc(100vh - 80px); */
+  padding-top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.anchordiv {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  background-color: blueviolet;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.one {
+  background-color: bisque;
 }
+.two {
+  background-color: burlywood;
+}
+.three {
+  background-color: darkgray;
+}
+.four {
+  background-color: darkgoldenrod;
+}
+
+.aButton {
+  color: inherit;
+  text-decoration: none;
+}
+
+.aButton:visited,
+.aButton:hover,
+.aButton:active,
+.aButton:focus {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* Hover
+Active
+Focus */
