@@ -8,7 +8,6 @@ import {
 import React, { useState, useEffect } from "react";
 
 function Header({ bgColor }) {
-  console.log("bgcolor", bgColor);
   const useStyles = makeStyles(() => ({
     header: {
       backgroundColor: `${bgColor}`,
