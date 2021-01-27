@@ -19,7 +19,7 @@ html {
 }
 
 #anchorTwo {
-  top: 100vh;
+  top: calc(100vh - 2px);
 }
 
 #navbar {

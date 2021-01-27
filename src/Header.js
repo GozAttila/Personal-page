@@ -28,19 +28,19 @@ function Header({ bgColor }) {
   const headersData = [
     {
       label: "Test One",
-      href: "#testone",
+      href: "testone",
     },
     {
       label: "Test Two",
-      href: "#testtwo",
+      href: "testtwo",
     },
     {
       label: "Test Three",
-      href: "#testthree",
+      href: "testthree",
     },
     {
       label: "Test Four",
-      href: "#testfour",
+      href: "testfour",
     },
   ];
 
@@ -79,10 +79,18 @@ function Header({ bgColor }) {
     </Typography>
   );
 
+  const jumpToRef = (ref) => {
+    console.log("ref", ref);
+    document.getElementById(ref).scrollIntoView(true);
+  };
+
   const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
       return (
         <Button
+          onClick={() => {
+            document.getElementById(href).scrollIntoView(true);
+          }}
           {...{
             key: label,
             color: "inherit",
@@ -91,9 +99,10 @@ function Header({ bgColor }) {
             // component: RouterLink,
           }}
         >
-          <a className="aButton" href={href}>
+          {/* <a className="aButton" href={href}>
             {label}
-          </a>
+          </a> */}
+          {label}
         </Button>
       );
     });
