@@ -5,8 +5,8 @@ function SectionTwo() {
   const styles = {
     triContainer: {
       height: "100vh",
+      padding: "0",
       paddingTop: "80px",
-      paddingLeft: "0",
     },
   };
   return (

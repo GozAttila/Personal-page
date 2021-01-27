@@ -8,6 +8,7 @@ import BackgroundImage from "./BackgroundImage";
 import bgImage1 from "./assets/img1.jpg";
 import bgImage2 from "./assets/img2.jpg";
 import bgImage3 from "./assets/img3.jpg";
+import SectionThree from "./SectionThree";
 
 const images = [bgImage1, bgImage2, bgImage3];
 const randomImage = () => {
@@ -39,6 +40,7 @@ function Pages() {
       });
       let observerTwo = new IntersectionObserver((entries) => {
         if (entries[0].boundingClientRect.y < 0) {
+          console.log("imagechange");
           imageChanger();
         }
       });
@@ -52,10 +54,10 @@ function Pages() {
       <Header bgColor={bgColor} />
       <SectionOne bgImage={bgImage} />
       <SectionTwo />
-
-      <div id="testthree" className="testdiv three">
+      <SectionThree />
+      {/* <div id="testthree" className="testdiv three">
         This is test three
-      </div>
+      </div> */}
       <div id="testfour" className="testdiv four">
         This is test four
       </div>

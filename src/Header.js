@@ -79,29 +79,21 @@ function Header({ bgColor }) {
     </Typography>
   );
 
-  const jumpToRef = (ref) => {
-    console.log("ref", ref);
-    document.getElementById(ref).scrollIntoView(true);
-  };
-
   const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
       return (
         <Button
-          onClick={() => {
-            document.getElementById(href).scrollIntoView(true);
-          }}
           {...{
             key: label,
             color: "inherit",
             className: menuButton,
-            // to: href,
-            // component: RouterLink,
+            onClick: () => {
+              document
+                .getElementById(href)
+                .scrollIntoView({ behavior: "smooth" });
+            },
           }}
         >
-          {/* <a className="aButton" href={href}>
-            {label}
-          </a> */}
           {label}
         </Button>
       );

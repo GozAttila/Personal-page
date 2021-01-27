@@ -15,12 +15,7 @@ function SectionOne({ bgImage }) {
   };
 
   return (
-    <Container
-      maxWidth="xl"
-      id="testone"
-      // className="testdivcont one"
-      style={styles.bgContainer}
-    >
+    <Container maxWidth="xl" id="testone" style={styles.bgContainer}>
       This is test one container with component
     </Container>
   );
