@@ -47,7 +47,6 @@ function ProjectCard() {
             <div className="overlaytest">
               <div className="inside_overlay">
                 <Typography align="center">{project.text}</Typography>
-                {/*tech icons here*/}
                 <div className="tech_holder">
                   {project.tech.map((tool) => {
                     console.log("tool", tool.image);

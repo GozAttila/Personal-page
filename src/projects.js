@@ -12,24 +12,24 @@ const javaScriptImage =
   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/3_JavaScript.png";
 const reactImage =
   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/4_React.png";
-const reduxImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/5_Redux.png";
-const pythonImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/6_Python.png";
-const djangoImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/7_Django.png";
-const drfImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/8_DRF.png";
-const vSCodeImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/9_VSCode.png";
-const pyCharmImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/A_PyCharm.png";
-const styledComponentsImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/B_styled-components.png";
-const gitlabCICDImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/C_gitlab-ci-cd.png";
-const dockerImage =
-  "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/D_docker.png";
+// const reduxImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/5_Redux.png";
+// const pythonImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/6_Python.png";
+// const djangoImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/7_Django.png";
+// const drfImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/8_DRF.png";
+// const vSCodeImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/9_VSCode.png";
+// const pyCharmImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/A_PyCharm.png";
+// const styledComponentsImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/B_styled-components.png";
+// const gitlabCICDImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/C_gitlab-ci-cd.png";
+// const dockerImage =
+//   "https://raw.githubusercontent.com/GozAttila/GozAttila/main/assets/D_docker.png";
 
 export const projects = [
   {
