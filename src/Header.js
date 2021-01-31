@@ -7,11 +7,12 @@ import {
 } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 
-function Header({ bgColor }) {
+function Header({ bgColor, navbarHeight }) {
   const useStyles = makeStyles(() => ({
     header: {
-      backgroundColor: `${bgColor}`,
+      backgroundColor: bgColor,
       transition: "all 0.5s",
+      height: navbarHeight,
     },
     menuButton: {
       // backgroundColor: "lightgray",
@@ -22,6 +23,8 @@ function Header({ bgColor }) {
     toolbar: {
       display: "flex",
       justifyContent: "space-between",
+      height: navbarHeight,
+      minHeight: "50px",
     },
   }));
 
@@ -83,6 +86,7 @@ function Header({ bgColor }) {
     return headersData.map(({ label, href }) => {
       return (
         <Button
+          // variant="contained"
           {...{
             key: label,
             color: "inherit",

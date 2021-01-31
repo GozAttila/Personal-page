@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-
+import bgImage3 from "./assets/img3.jpg";
 function SectionThree() {
   const styles = {
-    bgContainer: {
+    flipContainer: {
       color: "#FFFFFF",
       height: "100vh",
       padding: "0",
@@ -14,19 +14,6 @@ function SectionThree() {
       justifyContent: "center",
     },
   };
-  // window.onload = function () {
-  //   let card = document.getElementById("card");
-  //   card.addEventListener("click", () => {
-  //     card.classList.toggle("card--flipped");
-  //     console.log("Card clicked!");
-  //   });
-  // };
-  // Array.from(cards).forEach((card) => {
-  //   card.addEventListener("click", () => {
-  //     card.classList.toggle("card--flipped");
-  //     console.log("Card clicked!");
-  //   });
-  // });
 
   const turnCard = () => {
     const card = document.getElementById("card");
@@ -35,13 +22,14 @@ function SectionThree() {
   };
 
   return (
-    <Container maxWidth="xl" id="testthree" style={styles.bgContainer}>
+    <Container maxWidth="xl" id="testthree" style={styles.flipContainer}>
       {/* <div className="flipper">This is test three container with component</div> */}
       <div id="card" onClick={turnCard}>
         <div className="card__inner">
           <div className="card__front">
             <div>Front side</div>
             <div>Click to the back.</div>
+            <img src={bgImage3} className="cardtestimage" alt="for test" />
           </div>
 
           <div className="card__back">
