@@ -22,7 +22,7 @@ function SectionThree() {
   };
 
   return (
-    <Container maxWidth="xl" id="testthree" style={styles.flipContainer}>
+    <Container maxWidth="auto" id="testthree" style={styles.flipContainer}>
       {/* <div className="flipper">This is test three container with component</div> */}
       <div id="card" onClick={turnCard}>
         <div className="card__inner">

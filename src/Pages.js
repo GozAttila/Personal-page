@@ -5,6 +5,7 @@ import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
+import SectionFive from "./SectionFive";
 import BackgroundImage from "./BackgroundImage";
 
 import bgImage1 from "./assets/img1.jpg";
@@ -61,12 +62,7 @@ function Pages() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      {/* <div id="testthree" className="testdiv three">
-        This is test three
-      </div> */}
-      {/* <div id="testfour" className="testdiv four">
-        This is test four
-      </div> */}
+      <SectionFive />
 
       <BackgroundImage />
     </>

@@ -3,7 +3,7 @@ import Pages from "./Pages";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Pages />
       <div id="anchorOne"></div>
       <div id="anchorTwo"></div>

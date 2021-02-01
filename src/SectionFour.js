@@ -19,7 +19,7 @@ function SectionFour() {
     },
   };
   return (
-    <Container maxWidth="xl" id="testfour" style={styles.albumContainer}>
+    <Container maxWidth="auto" id="testfour" style={styles.albumContainer}>
       <Container style={styles.cardGrid} maxWidth="xl">
         <Grid container spacing={4} justify="space-evenly">
           <ProjectCard />

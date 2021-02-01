@@ -250,3 +250,25 @@ Focus */
 .techIcon {
   height: 30px;
 }
+
+.contactFormLabel {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+.contactFormInput {
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.contactFormButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+}
